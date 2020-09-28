@@ -40,4 +40,4 @@ clang++ \
     $SRC_DIR/Request/Request.cpp \
     $SRC_DIR/ServerConfiguration/ServerConfiguration.cpp \
     Server.cpp -o Server \
-    && LD_LIBRARY_PATH=. ./Server
+    && sudo LD_LIBRARY_PATH=. ./Server
