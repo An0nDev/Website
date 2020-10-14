@@ -1,6 +1,6 @@
-#include "HTStack/src/App/App.hpp"
-#include "HTStack/src/Server/Server.hpp"
-#include "HTStack/src/Request/Request.hpp"
+#include <HTStack/App/App.hpp>
+#include <HTStack/Server/Server.hpp>
+#include <HTStack/Request/Request.hpp>
 
 #include <map>
 #include <string>

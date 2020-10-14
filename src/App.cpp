@@ -1,7 +1,7 @@
-#include "HTStack/src/Response/Response.hpp"
-#include "HTStack/src/HTTPUtils/MIMEType.hpp"
-
 #include "App.hpp"
+
+#include <HTStack/Response/Response.hpp>
+#include <HTStack/HTTPUtils/MIMEType.hpp>
 
 #include <fstream>
 #include <iostream>

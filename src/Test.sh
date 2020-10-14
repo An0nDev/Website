@@ -1,10 +1,8 @@
 #!/bin/bash
 
-cd HTStack
-git pull origin master
-cd ..
+if [ -z "$COMPILER" ]; then COMPILER=clang++-10; fi
 
-clang++-10 \
+$COMPILER \
     -std=c++2a \
     -fPIC -shared \
     -lHTStack \
