@@ -2,11 +2,13 @@
 #include "HTStack/src/Server/Server.hpp"
 #include "HTStack/src/Request/Request.hpp"
 
+#include <map>
+#include <string>
+
 class App : public HTStack::App {
 public:
-    void onLoad ();
-    void onUnload ();
-    void onRequest (HTStack::Request & request);
+    App (HTStack::Server & server, std::map <std::string, std::string> & settings);
+    void handleRequest (HTStack::Request & request);
 };
 
-extern "C" HTStack::App* factory ();
+extern "C" HTStack::App* factory (HTStack::Server & server, std::map <std::string, std::string> & settings);
